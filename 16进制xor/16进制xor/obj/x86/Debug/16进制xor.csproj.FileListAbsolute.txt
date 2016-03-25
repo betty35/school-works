@@ -1,0 +1,9 @@
+F:\ZBQ2013312270\16进制xor\16进制xor\bin\Debug\16进制xor.exe
+F:\ZBQ2013312270\16进制xor\16进制xor\bin\Debug\16进制xor.pdb
+F:\ZBQ2013312270\16进制xor\16进制xor\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\ZBQ2013312270\16进制xor\16进制xor\obj\x86\Debug\_16进制xor.Form1.resources
+F:\ZBQ2013312270\16进制xor\16进制xor\obj\x86\Debug\_16进制xor.Properties.Resources.resources
+F:\ZBQ2013312270\16进制xor\16进制xor\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\ZBQ2013312270\16进制xor\16进制xor\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\ZBQ2013312270\16进制xor\16进制xor\obj\x86\Debug\16进制xor.exe
+F:\ZBQ2013312270\16进制xor\16进制xor\obj\x86\Debug\16进制xor.pdb
