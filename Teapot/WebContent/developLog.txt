@@ -1,0 +1,40 @@
+（姓名：ZBQ 学号：2013312270）
+敲代码中遇到过的问题：（其实这是个吐槽log）
+
+form往servlet发东西的时候Servlet的url晕得乱七八糟，从jsp文件夹发要写action="../XXservlet"，
+其中../坑人，嗯。
+
+没有发现WebKs里复制粘贴又改过的User这个bean里没有无参构造方法……导致DbHelper的get方法使用的时候出问题。
+它要返回一个属性全填满了的User对象，却连创建User都创建不出来……（都是role害的！）
+
+Bean里面的变量们名称要和数据库一致，不然映射会出问题
+
+拿mysql里的tinyint去对java里的enum会出事……（比如User的role，后来改String了……）
+
+拿mysql里的tinyint对java里的boolean还不知道会怎么样……//后，出事了
+
+纠结订单号怎么办，查查查---->String orderCode=UUID.randomUUID().toString().trim().replaceAll("-", ""); 
+
+总觉得java的resultset没c#的好使是我的错觉吗？getXXX好像有点乱= =，好怀念get("列名")
+
+运行servlet不断的抛出classNotFindException……一下午没有解决，结果最后居然重启就好了，摔 (╯°Д°)╯︵ ┻━┻
+
+forward过去的页面出现各种js引用不能的问题，推断是相对路径导致，于是取basePath改成绝对路径了，然并卵，依然无法使用导入的js。
+我完全没改动啊喂！forward后页面js无法使用问题你怎么突然莫名其妙的就好了？！= =# 呐呐，IDE你去死个几回吧~？你是的问题吧？是你的问题吧？
+
+事实证明，不要轻易使用mysql的tinyint，即使网上都说mysql的boolean就叫tinyint(1)，只要合理配置java，boolean就能正常转换。但所谓的“合理的配置”，并不知道是啥
+
+事实告诉我们，关掉，等半个小时，重启，是各种疑难杂症的正确解决方法。
+
+show居然是数据库的关键词……好吧，我忘了。结果我建的表单里有个列名叫show居然建表不报错，建成功了，就是查询怎么都失败= =
+
+……我受够了！！！order也是关键字？！明明就没有by只有order!!但是不能做表名，否则休想查询，任何查询都不行QAQ……而且建表依然不报错，能够成功建表(表名一定要长！不然会出事的！！！)
+改完表名，该dao一定要注意拼写……
+
+
+进度：还差评论&购物车完善//评论已完工，一遍过！一遍~过！没bug!!哦啦啦啦啦~//购物车完善成功
+//管理员按id看订单没写完//用户改信息没写完//用户修改信息已完成
+
+button的值在form里是传不过去的= =
+
+addressSetting修改中//修改完毕

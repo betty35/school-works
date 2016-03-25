@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Teapot</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description>登陆Servlet</description>
+    <display-name>UserLogin</display-name>
+    <servlet-name>UserLogin</servlet-name>
+    <servlet-class>controler.user.UserLogin</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>UserLogin</servlet-name>
+    <url-pattern>/UserLogin</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+    <description>测试Servlet</description>
+    <display-name>TestServlet</display-name>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>controler.TestServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/TestServlet</url-pattern>
+  </servlet-mapping>  
+  
+  
+<servlet>
+    <description>注册Servlet</description>
+    <display-name>UserRegister</display-name>
+    <servlet-name>UserRegister</servlet-name>
+    <servlet-class>controler.user.UserRegister</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>UserRegister</servlet-name>
+    <url-pattern>/UserRegister</url-pattern>
+  </servlet-mapping>  
+  
+ 
+<servlet>
+    <description>显示第一级商品分类</description>
+    <display-name>Show1stCategory</display-name>
+    <servlet-name>Show1stCategory</servlet-name>
+    <servlet-class>controler.product.Show1stCategory</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>Show1stCategory</servlet-name>
+    <url-pattern>/firstC</url-pattern>
+  </servlet-mapping>  
+  
+<servlet>
+    <description>显示第二级商品分类</description>
+    <display-name>Show2ndCategory</display-name>
+    <servlet-name>Show2ndCategory</servlet-name>
+    <servlet-class>controler.product.Show2ndCategory</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>Show2ndCategory</servlet-name>
+    <url-pattern>/secondC</url-pattern>
+  </servlet-mapping>  
+  
+  
+ <servlet>
+    <description>商品查询</description>
+    <display-name>QueryProduct</display-name>
+    <servlet-name>QueryProduct</servlet-name>
+    <servlet-class>controler.product.QueryProduct</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>QueryProduct</servlet-name>
+    <url-pattern>/Product</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+    <description>商品管理（变更）</description>
+    <display-name>ProductChange</display-name>
+    <servlet-name>ProductChange</servlet-name>
+    <servlet-class>controler.product.ProductChange</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ProductChange</servlet-name>
+    <url-pattern>/ProductChange</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+    <description>商品库存管理</description>
+    <display-name>StockChange</display-name>
+    <servlet-name>StockChange</servlet-name>
+    <servlet-class>controler.product.StockChange</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>StockChange</servlet-name>
+    <url-pattern>/StockChange</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+    <description>购物车</description>
+    <display-name>CartServlet</display-name>
+    <servlet-name>CartServlet</servlet-name>
+    <servlet-class>controler.cart.CartServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>CartServlet</servlet-name>
+    <url-pattern>/CartServlet</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+    <description>创建新订单</description>
+    <display-name>NewOrder</display-name>
+    <servlet-name>NewOrder</servlet-name>
+    <servlet-class>controler.order.NewOrder</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>NewOrder</servlet-name>
+    <url-pattern>/NewOrder</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+    <description>更新订单状态</description>
+    <display-name>UpdateOrderStatus</display-name>
+    <servlet-name>UpdateOrderStatus</servlet-name>
+    <servlet-class>controler.order.UpdateOrderStatus</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>UpdateOrderStatus</servlet-name>
+    <url-pattern>/UpdateOrderStatus</url-pattern>
+  </servlet-mapping> 
+
+ <servlet>
+    <description>管理订单查询</description>
+    <display-name>ShowOrder</display-name>
+    <servlet-name>ShowOrder</servlet-name>
+    <servlet-class>controler.order.ShowOrder</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ShowOrder</servlet-name>
+    <url-pattern>/ShowOrder</url-pattern>
+  </servlet-mapping>  
+
+
+<servlet>
+    <description>添加评论</description>
+    <display-name>NewComment</display-name>
+    <servlet-name>NewComment</servlet-name>
+    <servlet-class>controler.order.NewComment</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>NewComment</servlet-name>
+    <url-pattern>/NewComment</url-pattern>
+  </servlet-mapping>   
+  
+<servlet>
+    <description>地址管理</description>
+    <display-name>AddressServlet</display-name>
+    <servlet-name>AddressServlet</servlet-name>
+    <servlet-class>controler.user.AddressServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>AddressServlet</servlet-name>
+    <url-pattern>/AddressServlet</url-pattern>
+  </servlet-mapping>   
+
+  
+<servlet>
+    <description>用户设置</description>
+    <display-name>UserSettings</display-name>
+    <servlet-name>UserSettings</servlet-name>
+    <servlet-class>controler.user.UserSettings</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>UserSettings</servlet-name>
+    <url-pattern>/UserSettings</url-pattern>
+  </servlet-mapping>   
+  
+</web-app>
